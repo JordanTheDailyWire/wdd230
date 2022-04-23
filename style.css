@@ -4,19 +4,51 @@
 
 header{
     background-color: blue;
+    border-radius: 8px;
+    box-shadow: 5px 5px lightslategray;
+    margin-right: 390px;
+    margin-left: 390px;
+    padding: 40px;
 }
 
 img{
-    max-width: 90px;
+    max-width: 110px;
     position: absolute;
-    margin-left: 110px;
+    margin-left: 20px;
+    margin-top: -25px;
+    box-shadow: 2px 2px black;
 }
 
 h1{
     margin-top: 5%;
-    text-indent: 20%;
+    text-indent: 50%;
+    margin-bottom: 5%;
 }
 
 h2{
-    margin-top: 20%;
+    margin-top: 15px;
+    margin-left: 460px;
+}
+
+ul{
+    margin-left: 460px;
+}
+
+p{
+    text-indent: 410px;
+    margin-top: -10px;
+}
+
+footer{
+    text-align: center;
+}
+
+.grid-1{
+    display: grid;
+    background-color: blue;
+    grid-template-rows: 50px;
+    border-radius: 8px;
+    margin-right: 390px;
+    margin-left: 390px;
+    box-shadow: 5px 5px lightslategray;
 }
