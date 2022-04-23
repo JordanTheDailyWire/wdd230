@@ -2,7 +2,21 @@
     display: grid;
 }
 
-h1{
+header{
     background-color: blue;
-    color: white;
+}
+
+img{
+    max-width: 90px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+h1{
+    margin-top: 5%;
+    text-indent: 20%;
+}
+
+h2{
+    margin-top: 20%;
 }
