@@ -1,0 +1,71 @@
+#content{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 1.5em;
+}
+
+.hicks-law{
+    grid-column: 1/2;
+    box-shadow: 1px 0 0 2px lightslategray;
+}
+
+.fitts-law{
+    grid-column: 2/3;
+    box-shadow: 1px 0 0 2px lightslategray;
+}
+
+.rule-of-thirds{
+    grid-column: 3/4;
+    box-shadow: 1px 0 0 2px lightslategray;
+}
+
+header{
+    background-color: blue;
+    background-image: linear-gradient(to bottom right);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2, p{
+    font-family: sans-serif;
+}
+
+main p{
+    padding: 1em;
+}
+
+footer{
+    background-color: blue;
+    background-image: linear-gradient(to bottom right);
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding: .5em;
+}
+
+.update-text{
+    color: green;
+    font-weight: bold;
+}
+
+.princples + p{
+    font-weight: bold;
+}
+
+header a:link{
+    color: gray;
+}
