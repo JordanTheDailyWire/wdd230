@@ -1,0 +1,23 @@
+@media screen and (max-width: 400px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .hicks-law{
+        grid-column: 1/2;
+    }
+
+    .fitts-law{
+        grid-column: 1/2;
+    }
+
+    .rule-of-thirds{
+        grid-column: 1/2;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
