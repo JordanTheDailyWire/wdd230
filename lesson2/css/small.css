@@ -79,4 +79,13 @@ p{
 
 .link-1, .link-2, .link-3{
     text-align: right;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.p-1, .p-2, .p-3{
+    font-size: 25px;
 }
