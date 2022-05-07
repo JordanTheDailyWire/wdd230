@@ -1,71 +1,82 @@
-#content{
-    max-width: 960px;
-    margin: 0 auto;
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
-}
-
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 1.5em;
-}
-
-.hicks-law{
-    grid-column: 1/2;
-    box-shadow: 1px 0 0 2px lightslategray;
-}
-
-.fitts-law{
-    grid-column: 2/3;
-    box-shadow: 1px 0 0 2px lightslategray;
-}
-
-.rule-of-thirds{
-    grid-column: 3/4;
-    box-shadow: 1px 0 0 2px lightslategray;
+body{
+    background-color: white;
 }
 
 header{
     background-color: blue;
-    background-image: linear-gradient(to bottom right);
+    color: white;
+    text-shadow: 2px 2px 1px black;
     text-align: center;
-    padding: 10px;
-    border-radius: 15px 15px 0 0;
+    padding: .8em;
+    margin-bottom: 15px;
 }
 
-h1{
-    font-family: 'Courier New', Courier, monospace;
+.principles{
+    background-color: white;
+    padding: 25px;
+    display: grid;
+    grid-gap: 40px;
 }
 
-h2, p{
-    font-family: sans-serif;
+.hicks-law, .fitts-law, .rule-of-thirds{
+    border: solid 2px black;
+    padding: 15px;
+    display: grid;
+    box-shadow: 4px 5px 6px gray;
+    text-align: center;
 }
 
-main p{
-    padding: 1em;
+.site{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    font-size: 2rem;
+}
+
+a:hover{
+    color: green;
+}
+
+.img{
+    max-width: 30%;
+    margin: 0 auto;
 }
 
 footer{
     background-color: blue;
-    background-image: linear-gradient(to bottom right);
-    border-radius: 0 0 15px 15px;
+    font-size: 1rem;
+    color: white;
     text-align: center;
-    padding: .5em;
+    margin-top: 15px;
+    padding: .8em;
 }
 
-.update-text{
-    color: green;
-    font-weight: bold;
+h1{
+    font-size: 2em;
 }
 
-.princples + p{
-    font-weight: bold;
+h2{
+    margin: 25px 0;
+    padding: 0 15px;
+    text-align: center;
 }
 
-header a:link{
-    color: gray;
+h1, h2, h5, p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    text-align: center;
+    font-size: 1em;
+}
+
+.link-1, .link-2, .link-3{
+    text-align: right;
 }
