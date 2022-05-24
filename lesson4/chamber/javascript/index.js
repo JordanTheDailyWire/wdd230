@@ -1,6 +1,16 @@
-const Update = document.lastModified
-document.querySelector("#update").textContent = Update;
+// select the elements to manipulate (output to)
+const datefield = document.querySelector(".date");
+const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
 
-let currentDate = new Date();
-let Year = currentDate.getFullYear();
-document.getElementById("year").textContent = Year;
+// derive the current date using a date object
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(now);
+// long, medium, short options ... try them
+
+datefield.innerHTML = `<em>${fulldate}</em>`;
+datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;

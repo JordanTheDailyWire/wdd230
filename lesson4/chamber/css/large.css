@@ -1,0 +1,173 @@
+@media only screen and (min-width: 720px){
+
+    header{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    main{
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+    }
+
+    main .image-1{
+        width: 100%;
+    }
+
+    .summary{
+        background-color: white;
+        border: 1px solid black;
+        top: 80px;
+        left: 50px;
+        position: relative;
+        width: 285px;
+        height: 285px;
+        padding: 10px;
+    }
+
+    .utah-2{
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 6px;
+    }
+
+    .utah-3{
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 6px;
+    }
+
+    .utah-4{
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 6px;
+    }
+
+    .utah-5{
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 6px;
+    }
+
+    .utah-6{
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 6px;
+    }
+
+    .five-sites{
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .camp-site{
+        border: none;
+    }
+
+    article{
+        display: block;
+        margin-top: 20px;
+        border: 4px solid black;
+        padding-left: 15px;
+    }
+
+    .camp-article{
+        display: none;
+    }
+
+    .camp-site-images{
+        float: right;
+        width: 230px;
+        padding-left: 15px;
+    }
+
+    article p{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    nav ul.hide{
+        display: inline;
+    }
+
+    nav ul#primary{
+        display: flex;
+    }
+
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+
+    footer{
+        max-width: 1080px;
+        background-color: orange;
+        margin: 10px auto;
+    }
+
+    footer h2{
+        font-size: 26px;
+    }
+
+    footer h5{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-information{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer image{
+        width: 400px;
+    }
+
+    .footer-location{
+        padding-top: 30px;
+        padding-right: 100px;
+    }
+
+    .pin{
+        display: block;
+    }
+
+    .social{
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .contact{
+        display: inline;
+        padding-right: 25px;
+    }
+
+    .contact img{
+        display: inline;
+        width: 30px;
+        padding-right: 5px;
+    }
+
+    .contact div img{
+        display: inline;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 70px;
+    }
+}
