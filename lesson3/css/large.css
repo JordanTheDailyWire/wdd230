@@ -1,6 +1,9 @@
-@media only screen and (min-width: 720px){
-    .content{
-        max-width: 940px;
-        margin: 0 auto;
+@media (min-width: 900px) {
+    nav, #color-scheme{
+        flex-direction: none;
+    }
+
+    nav a, #color-scheme{
+        font-size: 1.3rem;
     }
 }
