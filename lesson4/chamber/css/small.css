@@ -63,10 +63,10 @@ nav ul.open {
     display: block;
 }
 
-#now {
+#content {
     text-align: center;
-    padding: 1.5rem;
     font-size: large;
+    padding-top: 1.5em;
 }
 
 /*Header*/
@@ -278,7 +278,6 @@ main div.weather h2 {
 #top-page {
     text-align: center;
     padding: 10px;
-    background-color: #FCA311;
 }
 
 .page-content {
