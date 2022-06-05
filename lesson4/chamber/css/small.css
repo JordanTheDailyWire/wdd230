@@ -16,57 +16,28 @@ p, li, div {
 }
 
 /*Navigation*/
-nav button {
-    margin: .2rem 2vw;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white
+nav, #color-scheme {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
-nav {
-    background-color: #004777;
-    text-align: center;
-    padding: .2rem;
-}
-
-#menu-btn {
-    font-size: 20px;
-    align-items: center;
-    padding-right: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-nav ul li a {
-    display: block;
+a:hover {
+    background-color: gray;
     color: white;
-    text-decoration: none;
-    padding: .8rem 2vw;
-    border-top: 1px solid rgba(0,0,0,.3);
-    font-size: large;
 }
 
-nav ul li a:hover {
+nav div, #color-scheme div {
+    flex: 1 1 100%;
     background-color: #004777;
-    color: #000000;
 }
 
-nav ul {
-    display: none;
-}
-
-nav ul.open {
+nav a, #color-scheme div {
     display: block;
-}
-
-#content {
     text-align: center;
-    font-size: large;
-    padding-top: 1.5em;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 /*Header*/
@@ -98,6 +69,25 @@ div.join picture img{
 
 .news-event, .weather, .join, .spot1, .spot2 {
     text-align: center;
+}
+
+.spot1 {
+    display: block;
+    color: #14213D;
+    border: none;
+    background-color: #FCA311;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot1 h2 {
+    background-color: #004777;
+    color: white;
+}
+
+.spot2 h2 {
+    background-color: #004777;
+    color: white;
 }
 
 .spot1 section, .spot2 section {
@@ -242,10 +232,6 @@ main div.weather h2 {
     position: absolute;
     left: 10%;
     bottom: 20%;
-}
-
-#weatherIcon {
-    width: 100%;
 }
 
 /*Footer*/

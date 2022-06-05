@@ -1,28 +1,12 @@
 @media only screen and (min-width: 1020px) {
 
     /*Navigation*/
-    nav button {
-        display: none;
+    nav, #color-scheme {
+        flex-direction: none;
     }
 
-    nav {
-        display: flex;
-    }
-
-    nav ul li{
-        align-self: center;
-        flex: 1 1 auto;
-    }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(211,211,211,.3);
-        text-align: center;
-        padding: 1rem 2vw;
-    }
-
-    nav ul li a:hover {
-        padding: 1rem 2vw;
+    nav a, #color-scheme {
+        font-size: 1.3rem;
     }
 
      /*Main*/
