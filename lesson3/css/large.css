@@ -1,6 +1,6 @@
 @media (min-width: 900px) {
     nav, #color-scheme{
-        flex-direction: none;
+        flex-direction: row;
     }
 
     nav a, #color-scheme{
