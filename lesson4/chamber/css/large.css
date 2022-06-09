@@ -38,6 +38,7 @@
         grid-row: 1;
         box-shadow: none;
         background-color: #E5E5E5;
+        margin-bottom: 125px;
     }
 
     .news-event p, .news-event h3 {
@@ -49,15 +50,35 @@
         grid-row: 2;
         align-self: center;
         margin: 1rem;
+        margin-top: -350px;
     }
 
     .spot2 {
-        grid-column: 3;
+        grid-column: 1;
+        grid-row: 3;
         align-self: center;
         margin: 1rem;
+        margin-top: -250px;
     }
 
-    .spot1 section:last-child, .spot2 section:last-child {
+    .spot3 {
+        grid-column: 3;
+        grid-row: 2;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -320px;
+    }
+
+    .spot4 {
+        grid-column: 3;
+        grid-row: 3;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -250px;
+    }
+
+    .spot1 section:last-child, .spot2 section:last-child,
+    .spot3 section:last-child, .spot4 section:last-child {
         border: none;
     }
 
@@ -80,6 +101,7 @@
     .weather {
         display: block;
         height: inherit;
+        margin-bottom: 125px;
     }
 
     .weather figure {

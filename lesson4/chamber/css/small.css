@@ -73,9 +73,36 @@ div.join picture img{
 
 .spot1 {
     display: block;
-    color: #14213D;
+    color: black;
     border: none;
-    background-color: #FCA311;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot2 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot3 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot4 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,20 +110,36 @@ div.join picture img{
 .spot1 h2 {
     background-color: #004777;
     color: white;
+    padding: 10px;
 }
 
 .spot2 h2 {
     background-color: #004777;
     color: white;
+    padding: 10px;
 }
 
-.spot1 section, .spot2 section {
+.spot3 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot4 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot1 section, .spot2 section,
+.spot3 section, .spot4 section {
     margin-bottom: 2rem;
     border-bottom: #666 solid 1px;
     padding: 1rem;
 }
 
-.spot1 section img, .spot2 section img {
+.spot1 section img, .spot2 section img,
+.spot3 section img, .spot4 section img {
     padding: 1rem 0;
 }
 
@@ -252,7 +295,6 @@ main div.weather h2 {
 .base-footer {
     text-align: center;
     padding: 1.5rem 2vw;
-    margin: 2rem;
 }
 
 .base-footer p {

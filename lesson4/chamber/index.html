@@ -14,12 +14,12 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo">
+            <img src="image/chamberofcommercelogo1.webp" alt="Chamber Of Commerce Logo">
             <section>
                 <h1>Chamber of Commerce</h1>
                 <a href="https://www.bing.com/ck/a?!&&p=ff879ec56c531de9a1efc81f88132b65c0382d4360dfb374bb2092ba5e3cd790JmltdHM9MTY1MzcyMDc4MSZpZ3VpZD0xNWFmZDVlMi0yNGIzLTQxZGMtYjAyZi1iYWRmYjgxOGUxMjQmaW5zaWQ9NTE2NA&ptn=3&fclid=d067e92f-de52-11ec-b950-3ee78080dd88&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"></a><img src="image/facebook logo.jpg" width="40px" alt="Facebook Icon">
                 <a href="https://www.bing.com/ck/a?!&&p=5c75a579b70ab37e83bae67ca145cb48b18af27d9fb6ccafab7b097a08bcf87aJmltdHM9MTY1MzcyMDc4NyZpZ3VpZD1hZTZjMTY3MC0xNTJiLTQ5MjktYjY0Zi0yMWJmYzY4OTA0NmQmaW5zaWQ9NTE3MQ&ptn=3&fclid=d45d5f71-de52-11ec-8e31-d4b3b910df86&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"></a><img src="image/instagram logo.jpg" width="40px" alt="Instagram Icon">
-                <a href="https://www.bing.com/ck/a?!&&p=57828191149b431b439c59ffef37fc84d6b4adfcb17ae9680a9cac581499b917JmltdHM9MTY1MzcyMDc5NSZpZ3VpZD00OTc4ODk5YS02YzkwLTQyNDEtYjVkMC0yYzU2ZWU0ZjEyMjQmaW5zaWQ9NTE3Nw&ptn=3&fclid=d8dcc88a-de52-11ec-9215-b05ca1286ae1&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1"></a><img src="image/twitter logo.jpg" width="40px" alt="Twitter Icon">
+                <a href="https://www.bing.com/th?id=OIP.T9W8FR0DLy4WuS8DKub7AgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"></a><img src="image/twitterlogo1.jpg" width="40px" alt="Twitter Icon">
             </section>
         </div>
         <div id="content">
@@ -37,7 +37,7 @@
             <picture class="hero-img">
                 <source media="" srcset="">
                 <source media="" srcset="">
-                <img src="image/south_carolina.jpg" alt="South carolina Photo">
+                <img src="image/wdd230-org.jpg" alt="South carolina Photo">
             </picture>
             <section>
                 <h2>Join the Chamber</h2>
@@ -58,16 +58,16 @@
         <div class="weather">
             <h2>Weather</h2>
             <h3 class="city-weather">South Carolina, Lexington</h3>
-            <img src="" alt="">
+            <figure><img src="" alt="" id="weatherLogo"><figcaption></figcaption></figure>
             <section class="weather-information">
-                <p class="day">Clear sky</p>
-                <p class="humidity">Humidity: 10%</p>
-                <p class="tempature">Tempature: 80°F</p>
-                <p class="wind-speed">Wind Speed: 5 MPH</p>
-                <p class="wind-chill">Wind Chill: 0%</p>
+                <p><span id="humidity"></span></p>
+                <p><span id="temperature"></span></p>
+                <p><span id="wind-speed"></span></p>
+                <p><span id="wind-chill"></span></p>
             </section>
         </div>
         <div class="join">
+            <section>
             <h2>New Release</h2>
             <p>So why have nearly 750 business joined the Lexington
                 Chamber? The benefits! Through service, advocacy and
@@ -76,6 +76,7 @@
                 mission, and every program, event and initiative we
                 host is focused on completing that mission.</p>
             <button onclick="window.location.href='';">Join the Chamber</button>
+            </section>
         </div>
         <div class="spot1">
             <h2>Golf Course</h2>
@@ -92,7 +93,8 @@
             <p>
                 892-182-9432
             </p>
-            <hr>
+        </div>
+        <div class="spot2">
             <h2>Lunch event</h2>
             <img src="" alt="">
             <p>
@@ -109,15 +111,13 @@
                 837-394-4920
             </p>
         </div>
-        <div class="spot2">
+        <div class="spot3">
             <h2>Lexington Business Party</h2>
             <img src="" alt="">
             <p>
                 The Lexington Business Party is held
                 every year at the Lexington Chamber of
-                Commerce. Where business and professionals
-                connect and expand their business with others.
-                All Lexington members are invited to the event.
+                Commerce. All lexington member are invited.
             </p>
             <hr>
             <p>
@@ -126,7 +126,8 @@
             <p>
                 825-384-8203
             </p>
-            <hr>
+        </div>
+        <div class="spot4">
             <h2>Contact Us</h2>
             <img src="" alt="">
             <p>
@@ -148,19 +149,19 @@
                 <picture><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo Photo"></picture>
             </div>
             <div class="footer-1">
-            <h3>Chamber of Commerce</h3>
-            <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
+                <h3>Chamber of Commerce</h3>
+                <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
             </div>
             <div class="footer-2">
                 <p>311 WEST MAIN STREET
                     LEXINGTON, SC 29072</p>
             </div>
-            <div class="base-footer">
+        </div>
+        <div class="base-footer">
             <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span class="date"></span></h5>
-            </div>
         </div>
     </footer>
 <script src="javascript/index.js"></script>
-    </div>
+<script src="javascript/windchill.js"></script>
 </body>
 </html>
