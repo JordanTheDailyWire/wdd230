@@ -93,8 +93,9 @@
     }
 
     .weather-information {
-        bottom: 30%;
+        bottom: 10%;
         padding: 0 0 0 1rem;
+        right: 10%;
     }
 
     /*Weather*/
@@ -111,6 +112,10 @@
     .weather h2 {
         background-color: #004777;
         color: white;
+    }
+
+    #weatherLogo {
+        width: 100px;
     }
 
     /*Footer*/

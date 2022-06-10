@@ -1,0 +1,57 @@
+
+html {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  table, caption {
+    border: 2px solid lightblue;
+    border-collapse: collapse;
+    box-shadow: 4px 5px 8px gray;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  td, th {
+    border: 1px solid lightblue;
+    padding: 10px 7px;
+  }
+
+  th {
+    background-color: blue;
+    color: white;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  tr:nth-of-type(odd) td {
+    background-color: lightblue;
+  }
+
+  tr:nth-of-type(even) td {
+    background-color: lightblue;
+  }
+
+  caption {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: none;
+  }
+
+  tr:nth-child(5) td:first-child {
+    font-style: italic;
+  }
+
+  tr:nth-child(4) td:last-child {
+    background-color: blue;
+    color: white;
+  }
+
+  tfoot tr:only-child td {
+    background-color: blue;
+    color: white;
+  }

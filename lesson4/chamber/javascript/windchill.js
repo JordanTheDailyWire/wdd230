@@ -1,6 +1,6 @@
 // Script for Weather and Wind Chill //
 
-apiURL = 'https://openweathermap.org/city/4597040';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=4574324&appid=45cd453256e0f3f4eda5de4059a5fed2';
 
 fetch(apiURL)
     .then((response) => response.json())

@@ -46,6 +46,11 @@ nav a, #color-scheme div {
     align-items: center;
     justify-content: center;
     padding-left: 2rem;
+    margin-left: 180px;
+}
+
+.header-content-1 {
+    margin-left: 120px;
 }
 
 .header-content h1 {
@@ -256,6 +261,7 @@ main div.weather h2 {
 
 .hero-img source{
     vertical-align: middle;
+    align-items: center;
 }
 
 /*Weather*/
