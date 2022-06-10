@@ -50,7 +50,7 @@
         grid-row: 2;
         align-self: center;
         margin: 1rem;
-        margin-top: -350px;
+        margin-top: -300px;
     }
 
     .spot2 {
@@ -58,7 +58,7 @@
         grid-row: 3;
         align-self: center;
         margin: 1rem;
-        margin-top: -250px;
+        margin-top: -180px;
     }
 
     .spot3 {
@@ -66,7 +66,7 @@
         grid-row: 2;
         align-self: center;
         margin: 1rem;
-        margin-top: -320px;
+        margin-top: -310px;
     }
 
     .spot4 {
@@ -74,7 +74,33 @@
         grid-row: 3;
         align-self: center;
         margin: 1rem;
-        margin-top: -250px;
+        margin-top: -265px;
+    }
+
+    .spot3 h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .spot4 h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .spot1 p {
+        padding: 10px;
+    }
+
+    .spot2 p {
+        padding: 10px;
+    }
+
+    .spot3 p {
+        padding: 10px;
+    }
+
+    .spot4 p {
+        padding: 10px;
     }
 
     .spot1 section:last-child, .spot2 section:last-child,
