@@ -29,6 +29,12 @@
         padding-bottom: 2rem;
     }
 
+    #top-page-banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     .herodiv {
         grid-column: 2;
     }

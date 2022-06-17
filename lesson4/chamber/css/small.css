@@ -49,6 +49,11 @@ nav a, #color-scheme div {
     margin-left: 180px;
 }
 
+#top-page-banner {
+    background-color: orange;
+    padding: 5px;
+}
+
 .header-content-1 {
     margin-left: 120px;
 }
