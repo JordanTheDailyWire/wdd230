@@ -1,0 +1,237 @@
+@media only screen and (min-width: 1020px) {
+
+    /*Navigation*/
+    nav, #color-scheme {
+        flex-direction: none;
+    }
+
+    nav a, #color-scheme {
+        font-size: 1.3rem;
+    }
+
+     /*Main*/
+    main > div {
+        margin-top: 10px;
+    }
+
+    main div section button {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #home-page {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    #top-page-banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .herodiv {
+        grid-column: 2;
+    }
+
+    .news-event {
+        grid-column: 1;
+        grid-row: 1;
+        box-shadow: none;
+        background-color: #E5E5E5;
+        margin-bottom: 125px;
+    }
+
+    .news-event p, .news-event h3 {
+        text-align: left;
+    }
+
+    .spot1 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -420px;
+    }
+
+    .spot2 {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -320px;
+    }
+
+    .spot3 {
+        grid-column: 3;
+        grid-row: 2;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -420px;
+    }
+
+    .spot4 {
+        grid-column: 3;
+        grid-row: 3;
+        align-self: center;
+        margin: 1rem;
+        margin-top: -400px;
+    }
+
+    .spot3 h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .spot4 h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .spot1 p {
+        padding: 10px;
+    }
+
+    .spot2 p {
+        padding: 10px;
+    }
+
+    .spot3 p {
+        padding: 10px;
+    }
+
+    .spot4 p {
+        padding: 10px;
+    }
+
+    .spot1 section:last-child, .spot2 section:last-child,
+    .spot3 section:last-child, .spot4 section:last-child {
+        border: none;
+    }
+
+    .join {
+        grid-column: 2;
+        margin-top: 50px;
+    }
+
+    .herodiv section {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+
+    .weather-information {
+        bottom: 10%;
+        padding: 0 0 0 1rem;
+        right: 10%;
+    }
+
+    /*Weather*/
+    .weather {
+        display: block;
+        height: inherit;
+        margin-bottom: 125px;
+    }
+
+    .weather figure {
+        position: static;
+    }
+
+    .weather h2 {
+        background-color: #004777;
+        color: white;
+    }
+
+    #weatherLogo {
+        width: 100px;
+    }
+
+    /*Footer*/
+    .base-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .base-footer p {
+        border-right: 1px solid #666;
+        border-left: 1px solid #666;
+    }
+
+    /*Discovery Page*/
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .media-card {
+        width: 100%;
+        transition: ease-in-out 0.3s;;
+        transform: scale(0.9);
+    }
+
+    .media-card:hover {
+        transform: scale(1.02);
+    }
+
+    /*Join Page*/
+    form  {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        padding: 0 4rem;
+    }
+
+   form input.submitBtn {
+       grid-column: 2;
+   }
+
+   /*Directory Page*/
+   .grid-view {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .list-view section{
+        display: flex;
+        padding: 2rem 0;
+    }
+
+    .list-view section h2, 
+    .list-view section p, 
+    .list-view section a {
+        padding: 0 2rem;
+    }
+
+    .list-view section h2 {
+        width: 15%;
+    }
+
+    .list-view section p {
+        width: 15%;
+    }
+
+    /*Contact Page*/
+    #contact div.form-container {
+        width: 50%;
+        padding: 1.5rem 0;
+    }
+
+    .contact-field {
+        border: #D3D3D3 1px solid;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .contact-button {
+        margin: 1.5rem 2rem;
+    }
+
+    div.form-container form {
+        display: block;
+    }
+}

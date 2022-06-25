@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+p, li, div {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#home-page p {
+    font-weight: bold;
+}
+
+/*Navigation*/
+nav, #color-scheme {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: gray;
+    color: white;
+}
+
+nav div, #color-scheme div {
+    flex: 1 1 100%;
+    background-color: #004777;
+}
+
+nav a, #color-scheme div {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Header*/
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    margin-left: 180px;
+}
+
+#top-page-banner {
+    background-color: orange;
+    padding: 5px;
+}
+
+.header-content-1 {
+    margin-left: 120px;
+}
+
+.header-content h1 {
+    font-family: 'Noto Serif';
+}
+
+/*Homepage*/
+main#home-page {
+    margin: .5rem;
+    padding: .1rem;
+    margin: 0 auto;
+}
+
+main > div {
+    margin-top: 2rem;
+}
+
+div.join picture img{
+    padding: 1rem 0;
+}
+
+.news-event, .weather, .join, .spot1, .spot2 {
+    text-align: center;
+}
+
+.spot1 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot2 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot3 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot4 {
+    display: block;
+    color: black;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spot1 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot2 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot3 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot4 h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.spot1 section, .spot2 section,
+.spot3 section, .spot4 section {
+    margin-bottom: 2rem;
+    border-bottom: #666 solid 1px;
+    padding: 1rem;
+}
+
+.spot1 section img, .spot2 section img,
+.spot3 section img, .spot4 section img {
+    padding: 1rem 0;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+div.herodiv section {
+    position: absolute;
+    top: 5%;
+	left: -600px;
+    right: 0;
+    padding: 1.5rem;
+    color: rgba(92, 7, 7, 0.788);
+    background-color: rgba(255,255,255,.6);
+    -webkit-animation: slide 0.5s 
+    forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 1.5s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.gold-members {
+    height: 40vh;
+    overflow: scroll;
+}
+
+.gold-members h2 {
+    background-color: #004777;
+    color: white;
+    padding: 1rem 0;
+}
+
+.gold-members section a, .spot1 section a, .spot2 section a {
+    text-decoration: none;
+    color: #004777;
+}
+
+.spot1 section a:hover, .spot2 section a:hover {
+    text-decoration: underline;
+}
+
+main div button {
+    color: #004777;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 3px solid #FCA311;
+    box-shadow: 0 0 10px #E5E5E5;
+    border-radius: 10px;
+}
+
+main div button:hover {
+    background-color: #FCA311;
+    color: #004777;
+}
+
+.weather {
+    background-color: #E5E5E5; 
+}
+
+h3, main div.news-event p, main div.join p,
+.discover article h2, .discover article p {
+    padding: 1rem;
+}
+
+main div.weather h2 {
+    padding: 10px;
+}
+
+.join {
+    padding: 3rem;
+    box-shadow: 0 0 10px #888;
+}
+
+.join button {
+    display: block;
+    color: #14213D;
+    border: none;
+    background-color: #FCA311;
+    width: 100%;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.join button:hover {
+    background-color: #004777;
+    color: white;
+}
+
+.news-event h2 {
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
+.herodiv section h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-img source{
+    vertical-align: middle;
+    align-items: center;
+}
+
+/*Weather*/
+.weather {
+    position: relative;
+    height: 30vh;
+}
+
+.weather-information {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    text-align: left;
+}
+
+.weather figure {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+/*Footer*/
+.footer-content {
+    display: block;
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.footer-content div {
+    font-size: 13px;
+    text-align: center;
+    align-self: center;
+}
+
+.base-footer {
+    text-align: center;
+    padding: 1.5rem 2vw;
+}
+
+.base-footer p {
+    padding: 5px;
+    color: #666;
+}
+
+/*Top-page*/
+#top-page {
+    text-align: center;
+    padding: 10px;
+}
+
+.page-content {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5%;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/*Clearfix*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Load Effect*/
+main.discover picture img[data-src] {
+    opacity: 0;
+    visibility: hidden;
+}
+
+main.discover picture img{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+/*Discover Page*/
+.discover-heading {
+    background-color: #EEEE;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/*Discover*/
+.media-card {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px #888;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.discover-article {
+    padding: 2rem;
+    text-align: center;
+}
+
+.discover-article p {
+    padding-top: 1rem;
+}
+
+.media-button:hover {
+    background-color: gray;
+}
+
+/*Join Page*/
+#join-form {
+    padding: 1rem 1rem;
+}
+
+#join-form h2 {
+    text-align: center;
+    font-family: 'Noto Serif';
+    padding: 1rem;
+}
+
+label.top {
+    display: block;
+    padding-top: 1rem;
+    font-family: 'Montserrat';
+    color: #004777;
+    font-weight: bolder;
+}
+
+form label.sbs {
+    display: block;
+    font-size: 1.5rem;
+    padding: .75rem 0;
+    color: #FCA311;
+    font-weight: bolder;
+}
+
+legend {
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0 .5rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+    border: #999 1px solid;
+}
+
+form label.top input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding: .50rem 0;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+form input.submitBtn {
+    width: 90%;
+    max-width: 15rem;
+    padding: 1rem;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: orange;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+}
+
+form input.submitBtn:hover {
+    background-color: #FCA311;
+}
+
+/*Validation*/
+form label.top input:required {
+    border-color: red;
+}
+
+form label.top input:required:valid {
+    border-color: #888;
+}
+
+/*Directory*/
+.directoryPage h2.dirHeading {
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #EEEE;
+    margin-bottom: 3rem;
+}
+
+.list-view section h2, .grid-view section h2 {
+    font-family: 'Noto Serif';
+    text-align: center;
+}
+
+/*Directory Button*/
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.links ul li span {
+    margin: 7px;
+    font-size: 2rem;
+}
+
+.links ul li:hover,
+.links ul li.active {
+    color: white;
+    background-color: #004777;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Grid View*/
+.grid-view section {
+    margin: 1rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    border: #888 1px solid;
+    color: #004777;
+}
+
+.grid-view section img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid-view section hr {
+    margin-bottom: 1.5rem;
+}
+
+.grid-view section p,
+.grid-view section a {
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+/*List View*/
+.list-view section {
+    padding: 1rem;
+    color: #14213D;
+    margin: 0 .5rem;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.list-view section:nth-last-of-type(even) {
+    background-color: rgba(252,163,17, .5);
+}
+
+.list-view section p {
+    padding: 3px;
+}
+
+.list-view section:last-child {
+    margin-bottom: 3rem;
+}
+
+/*Contact*/
+label.cont-fields {
+    display: block;
+    padding: .50rem 0;
+    font-weight: bold;
+}
+
+label.cont-fields input {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    border: 1px solid #888;
+    padding: .50rem 0;
+}
+
+#contact div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.contact-button {
+    margin: 1.5rem 0 1.5rem 1rem;
+    padding: .50rem;
+    background-color: #FCA311;
+    color: #004777;
+    font-weight: bold;
+    border: none;
+}
+
+.contact-button:hover {
+    background-color: #004777;
+    color: #E5E5E5;
+}
