@@ -25,16 +25,18 @@
         padding-bottom: 2rem;
     }
 
-    #top-page-banner {
+    #banner {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
+        background-color: #004777;
+        color: white;
+        padding: 10px;
     }
 
-    .content {
-        margin-top: 20px;
-        margin-bottom: 5px;
+    #date1 {
         text-align: center;
+        padding: 10px;
     }
 
     .herodiv {

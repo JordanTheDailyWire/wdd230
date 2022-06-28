@@ -1,7 +1,6 @@
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
-const datefield1 = document.querySelector(".date-1");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+const datefield1 = document.querySelector("#date1");
 
 // derive the current date using a date object
 const now = new Date();
@@ -10,16 +9,15 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 datefield1.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 document.querySelector('#currentdate').innerHTML = document.lastModified;
 
-const banner = document.querySelector('#top-page-banner');
-
 let dayOfWeek = new Date().getDay();
 
+// javascript for banner
 if (dayOfWeek == 1 || dayOfWeek == 2) {
+    const banner = document.querySelector('#banner');
     banner.style.display = 'block';
 }
 else {

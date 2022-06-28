@@ -4,26 +4,22 @@ const list = document.querySelector('.list');
 
 button.addEventListener('click', function() {
   let myBookItems = input.value;
+  input.value = "";
 
   const listItem = document.createElement('li');
-
   const listText = document.createElement('span');
-
   const listBtn = document.createElement('button');
 
-  if (input == input.value) {
-
-    listText.textContent = myBookItems;
-    listItem.appendChild(listBtn);
- }
-
+  listItem.appendChild(listText);
+  listText.textContent = myBookItems;
+  listItem.appendChild(listBtn);
   listBtn.textContent = 'X';
+  list.appendChild(listItem);
+  
 
-  listItem.append(listBtn);
-
-  listBtn.addEventListener('click', function(e) {
+  listBtn.addEventListener('click', function() {
     list.removeChild(listItem);
-  })
+  });
 
   input.focus();
-})
+});
