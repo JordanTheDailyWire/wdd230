@@ -41,8 +41,10 @@ input {
 }
 
 label {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
+	padding: 15px;
 }
+
 .listcontainer {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin: 1rem;
