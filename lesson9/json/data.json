@@ -6,6 +6,13 @@
             "business representative":"Mr. Brad Genners",
             "email":"brad.genners@bevsouth.us",
             "img":"image/directoryimage1.jpg"
+        },
+
+        {
+            "membership": "Gold",
+            "employees":"",
+            "type of business":"",
+            "joined":""
         }
     ]
 }

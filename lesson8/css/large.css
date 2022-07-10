@@ -191,6 +191,7 @@
 
    form input.submitBtn {
        grid-column: 2;
+       margin-left: 40px;
    }
 
    /*Directory Page*/

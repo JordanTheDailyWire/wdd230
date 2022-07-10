@@ -1,3 +1,4 @@
+/* CSS for smaller devices */
 * {
     margin: 0;
     padding: 0;
@@ -8,61 +9,81 @@ img{
 }
 
 p, li, div {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat';
 }
 
 #home-page p {
     font-weight: bold;
 }
 
-/*Navigation*/
-nav, #color-scheme {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+/* Navigation */
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white
 }
 
-a:hover {
-    background-color: gray;
-    color: white;
-}
-
-nav div, #color-scheme div {
-    flex: 1 1 100%;
+nav {
     background-color: #004777;
+    text-align: center;
+    padding: .2rem;
 }
 
-nav a, #color-scheme div {
-    display: block;
-    text-align: center;
-    padding: 15px;
+#menu-btn {
+    font-size: 20px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
     text-decoration: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 2vw;
+    border-top: 1px solid rgba(0,0,0,.3);
+    font-size: large;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+    color: #000000;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#now {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: large;
     color: white;
 }
 
-/*Header*/
-.header-content{
+/* Header */
+.header-content {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 2rem;
-    margin-left: 180px;
-}
-
-#top-page-banner {
-    background-color: orange;
-    padding: 5px;
-}
-
-.header-content-1 {
-    margin-left: 120px;
 }
 
 .header-content h1 {
     font-family: 'Noto Serif';
 }
 
-/*Homepage*/
+/* Home Page */
 main#home-page {
     margin: .5rem;
     padding: .1rem;
@@ -73,83 +94,21 @@ main > div {
     margin-top: 2rem;
 }
 
-div.join picture img{
+div.join picture img {
     padding: 1rem 0;
 }
 
-.news-event, .weather, .join, .spot1, .spot2 {
+.news-events, .weather, .join, .spotlight1, .spotlight2 {
     text-align: center;
 }
 
-.spot1 {
-    display: block;
-    color: black;
-    border: none;
-    background-color: #E5E5E5;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spot2 {
-    display: block;
-    color: black;
-    border: none;
-    background-color: #E5E5E5;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spot3 {
-    display: block;
-    color: black;
-    border: none;
-    background-color: #E5E5E5;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spot4 {
-    display: block;
-    color: black;
-    border: none;
-    background-color: #E5E5E5;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spot1 h2 {
-    background-color: #004777;
-    color: white;
-    padding: 10px;
-}
-
-.spot2 h2 {
-    background-color: #004777;
-    color: white;
-    padding: 10px;
-}
-
-.spot3 h2 {
-    background-color: #004777;
-    color: white;
-    padding: 10px;
-}
-
-.spot4 h2 {
-    background-color: #004777;
-    color: white;
-    padding: 10px;
-}
-
-.spot1 section, .spot2 section,
-.spot3 section, .spot4 section {
+.spotlight1 section, .spotlight2 section {
     margin-bottom: 2rem;
     border-bottom: #666 solid 1px;
     padding: 1rem;
 }
 
-.spot1 section img, .spot2 section img,
-.spot3 section img, .spot4 section img {
+.spotlight1 section img, .spotlight2 section img {
     padding: 1rem 0;
 }
 
@@ -193,12 +152,12 @@ div.herodiv section {
     padding: 1rem 0;
 }
 
-.gold-members section a, .spot1 section a, .spot2 section a {
+.gold-members section a, .spotlight1 section a, .spotlight2 section a {
     text-decoration: none;
     color: #004777;
 }
 
-.spot1 section a:hover, .spot2 section a:hover {
+.spotlight1 section a:hover, .spotlight2 section a:hover {
     text-decoration: underline;
 }
 
@@ -222,7 +181,7 @@ main div button:hover {
     background-color: #E5E5E5; 
 }
 
-h3, main div.news-event p, main div.join p,
+h3, main div.news-events p, main div.join p,
 .discover article h2, .discover article p {
     padding: 1rem;
 }
@@ -238,7 +197,7 @@ main div.weather h2 {
 
 .join button {
     display: block;
-    color: #14213D;
+    color: #004777;
     border: none;
     background-color: #FCA311;
     width: 100%;
@@ -254,7 +213,7 @@ main div.weather h2 {
     color: white;
 }
 
-.news-event h2 {
+.news-events h2 {
     background-color: #004777;
     color: white;
     padding: 10px;
@@ -266,16 +225,20 @@ main div.weather h2 {
 
 .hero-img source{
     vertical-align: middle;
-    align-items: center;
 }
 
-/*Weather*/
+/* Weather */
 .weather {
     position: relative;
     height: 30vh;
 }
 
-.weather-information {
+.weather h2 {
+    background-color: #004777;
+    color: white;
+}
+
+.weatherLogo {
     position: absolute;
     right: 5%;
     bottom: 10%;
@@ -288,7 +251,11 @@ main div.weather h2 {
     bottom: 20%;
 }
 
-/*Footer*/
+#weatherLogo {
+    width: 100%;
+}
+
+/* Footer */
 .footer-content {
     display: block;
     background-color: #004777;
@@ -306,6 +273,7 @@ main div.weather h2 {
 .base-footer {
     text-align: center;
     padding: 1.5rem 2vw;
+    margin: 2rem;
 }
 
 .base-footer p {
@@ -313,13 +281,14 @@ main div.weather h2 {
     color: #666;
 }
 
-/*Top-page*/
-#top-page {
+/* Top Page Banner */
+#top-page-banner {
     text-align: center;
     padding: 10px;
+    background-color: #FCA311;
 }
 
-.page-content {
+.bannerBtn {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -328,14 +297,14 @@ main div.weather h2 {
     font-size: x-large;
 }
 
-/*Clearfix*/
+/* Clear Fix After */
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/*Load Effect*/
+/* Lazy Load Effect */
 main.discover picture img[data-src] {
     opacity: 0;
     visibility: hidden;
@@ -346,14 +315,18 @@ main.discover picture img{
     transition: 1s linear;
 }
 
-/*Discover Page*/
+/* Discover Page */
 .discover-heading {
     background-color: #EEEE;
     text-align: center;
     padding: 1.5rem;
 }
 
-/*Discover*/
+.greeting {
+    padding-bottom: 1rem;
+}
+
+/* Discover Page Media Card */
 .media-card {
     width: 100%;
     overflow: hidden;
@@ -371,11 +344,11 @@ main.discover picture img{
     padding-top: 1rem;
 }
 
-.media-button:hover {
+.media-btn:hover {
     background-color: gray;
 }
 
-/*Join Page*/
+/* Join Page */
 #join-form {
     padding: 1rem 1rem;
 }
@@ -445,7 +418,7 @@ form input.submitBtn:hover {
     background-color: #FCA311;
 }
 
-/*Validation*/
+/* Vaildation */
 form label.top input:required {
     border-color: red;
 }
@@ -454,7 +427,21 @@ form label.top input:required:valid {
     border-color: #888;
 }
 
-/*Directory*/
+/* Thank You Page */
+#thankyou {
+    text-align: center;
+}
+
+#thankyou h2 {
+    font-family: 'Montserrat';
+    padding: 2rem;
+}
+
+#thankyou p {
+    padding: 0 2rem 4rem 2rem;
+}
+
+/* Directory Page */
 .directoryPage h2.dirHeading {
     font-family: 'Montserrat';
     text-align: center;
@@ -468,7 +455,7 @@ form label.top input:required:valid {
     text-align: center;
 }
 
-/*Directory Button*/
+/* Directory Page Buttons */
 .links ul {
     display: flex;
     justify-content: center;
@@ -488,7 +475,7 @@ form label.top input:required:valid {
     cursor: pointer;
 }
 
-/*Grid View*/
+/* Grid View */
 .grid-view section {
     margin: 1rem;
     padding: 2.5rem 1.5rem;
@@ -515,10 +502,10 @@ form label.top input:required:valid {
     padding: 5px 0;
 }
 
-/*List View*/
+/* List View */
 .list-view section {
     padding: 1rem;
-    color: #14213D;
+    color: #004777;
     margin: 0 .5rem;
     font-weight: bold;
     font-size: 13px;
@@ -536,7 +523,7 @@ form label.top input:required:valid {
     margin-bottom: 3rem;
 }
 
-/*Contact*/
+/* Contact Us Page */
 label.cont-fields {
     display: block;
     padding: .50rem 0;
@@ -557,7 +544,7 @@ label.cont-fields input {
     padding: 1.5rem 0;
 }
 
-.contact-button {
+.contactBtn {
     margin: 1.5rem 0 1.5rem 1rem;
     padding: .50rem;
     background-color: #FCA311;
@@ -566,7 +553,7 @@ label.cont-fields input {
     border: none;
 }
 
-.contact-button:hover {
+.contactBtn:hover {
     background-color: #004777;
     color: #E5E5E5;
 }

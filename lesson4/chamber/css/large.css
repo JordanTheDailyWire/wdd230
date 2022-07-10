@@ -1,11 +1,37 @@
+/* For Large Viewports */
 @media only screen and (min-width: 1020px) {
 
-    /*Navigation*/
-    nav a, #color-scheme {
-        font-size: 1.3rem;
+    /* Navigation */
+    nav button {
+        display: none;
     }
 
-     /*Main*/
+    nav ul#primaryNav {
+        display: flex;
+    }
+
+    nav ul li{
+        align-self: center;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(211,211,211,.3);
+        text-align: center;
+        padding: 1rem 2vw;
+    }
+
+    nav ul li a:hover {
+        padding: 1rem 2vw;
+    }
+
+    nav ul li.social-media-1 a, nav ul li.social-media-2 a{
+        border: none;
+        padding: 0;
+    }
+
+    /* Main Page */
     main > div {
         margin-top: 10px;
     }
@@ -25,102 +51,40 @@
         padding-bottom: 2rem;
     }
 
-    #banner {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        background-color: #004777;
-        color: white;
-        padding: 10px;
-    }
-
-    #date1 {
-        text-align: center;
-        padding: 10px;
-    }
-
     .herodiv {
         grid-column: 2;
     }
 
-    .news-event {
+    .news-events {
         grid-column: 1;
         grid-row: 1;
         box-shadow: none;
         background-color: #E5E5E5;
-        margin-bottom: 125px;
     }
 
-    .news-event p, .news-event h3 {
+    .news-events p, .news-events h3 {
         text-align: left;
     }
 
-    .spot1 {
+    .spotlight1 {
         grid-column: 1;
         grid-row: 2;
         align-self: center;
         margin: 1rem;
-        margin-top: -420px;
     }
 
-    .spot2 {
-        grid-column: 1;
-        grid-row: 3;
-        align-self: center;
-        margin: 1rem;
-        margin-top: -320px;
-    }
-
-    .spot3 {
+    .spotlight2 {
         grid-column: 3;
-        grid-row: 2;
         align-self: center;
         margin: 1rem;
-        margin-top: -420px;
     }
 
-    .spot4 {
-        grid-column: 3;
-        grid-row: 3;
-        align-self: center;
-        margin: 1rem;
-        margin-top: -400px;
-    }
-
-    .spot3 h2 {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .spot4 h2 {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .spot1 p {
-        padding: 10px;
-    }
-
-    .spot2 p {
-        padding: 10px;
-    }
-
-    .spot3 p {
-        padding: 10px;
-    }
-
-    .spot4 p {
-        padding: 10px;
-    }
-
-    .spot1 section:last-child, .spot2 section:last-child,
-    .spot3 section:last-child, .spot4 section:last-child {
+    .spotlight1 section:last-child, .spotlight2 section:last-child {
         border: none;
     }
 
     .join {
         grid-column: 2;
-        margin-top: 50px;
     }
 
     .herodiv section {
@@ -129,21 +93,23 @@
         left: 25%;
     }
 
-    .weather-information {
-        bottom: 10%;
+    .weatherInfo {
+        bottom: 30%;
         padding: 0 0 0 1rem;
-        right: 10%;
     }
 
-    /*Weather*/
+    /* Weather */
     .weather {
         display: block;
         height: inherit;
-        margin-bottom: 125px;
     }
 
     .weather figure {
         position: static;
+    }
+
+    #weatherIcon {
+        width: 40%;
     }
 
     .weather h2 {
@@ -151,11 +117,7 @@
         color: white;
     }
 
-    #weatherLogo {
-        width: 100px;
-    }
-
-    /*Footer*/
+    /* Footer */
     .base-footer {
         display: flex;
         justify-content: center;
@@ -166,7 +128,7 @@
         border-left: 1px solid #666;
     }
 
-    /*Discovery Page*/
+    /* Discover Page */
     #discover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -183,7 +145,7 @@
         transform: scale(1.02);
     }
 
-    /*Join Page*/
+    /* Join Page */
     form  {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -195,7 +157,7 @@
        grid-column: 2;
    }
 
-   /*Directory Page*/
+   /* Directory Page */
    .grid-view {
     grid-template-columns: 1fr 1fr 1fr;
     }
@@ -205,8 +167,8 @@
         padding: 2rem 0;
     }
 
-    .list-view section h2, 
-    .list-view section p, 
+    .list-view section h2,
+    .list-view section p,
     .list-view section a {
         padding: 0 2rem;
     }
@@ -219,7 +181,7 @@
         width: 15%;
     }
 
-    /*Contact Page*/
+    /* Contact Us Page */
     #contact div.form-container {
         width: 50%;
         padding: 1.5rem 0;
@@ -231,10 +193,10 @@
         border-radius: 10px;
     }
 
-    .contact-button {
+    .contactBtn {
         margin: 1.5rem 2rem;
     }
-
+    
     div.form-container form {
         display: block;
     }

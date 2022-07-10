@@ -9,149 +9,100 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="short icon" href="image/favicon.ico">
-    <title>Chamber of Commerce Home Page</title>
+    <link rel="stylesheet" href="image/favicon.ico">
+    <title>Home Page</title>
 </head>
 <body>
-    <header>
-        <div id="banner">
-            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-        </div>
-        <div class="header-content">
-            <img src="image/chamberofcommercelogo1.webp" alt="Chamber Of Commerce Logo">
-            <div class="header-content-1">
-                <a href="https://www.bing.com/ck/a?!&&p=ff879ec56c531de9a1efc81f88132b65c0382d4360dfb374bb2092ba5e3cd790JmltdHM9MTY1MzcyMDc4MSZpZ3VpZD0xNWFmZDVlMi0yNGIzLTQxZGMtYjAyZi1iYWRmYjgxOGUxMjQmaW5zaWQ9NTE2NA&ptn=3&fclid=d067e92f-de52-11ec-b950-3ee78080dd88&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"></a><img src="image/facebooklogo.jpg" width="40" alt="Facebook Icon">
-                <a href="https://www.bing.com/ck/a?!&&p=5c75a579b70ab37e83bae67ca145cb48b18af27d9fb6ccafab7b097a08bcf87aJmltdHM9MTY1MzcyMDc4NyZpZ3VpZD1hZTZjMTY3MC0xNTJiLTQ5MjktYjY0Zi0yMWJmYzY4OTA0NmQmaW5zaWQ9NTE3MQ&ptn=3&fclid=d45d5f71-de52-11ec-8e31-d4b3b910df86&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"></a><img src="image/instagramlogo.jpg" width="40" alt="Instagram Icon">
-                <a href="https://www.bing.com/th?id=OIP.T9W8FR0DLy4WuS8DKub7AgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"></a><img src="image/twitterlogo1.jpg" width="40" alt="Twitter Icon">
-            </div>
-        </div>
-        <div>
-            <nav>
-                <div><a href="index.html">Home</a></div>
-                <div><a href="discover.html">Discover</a></div>
-                <div><a href="directory.html">Directory</a></div>
-                <div><a href="join.html">Join</a></div>
-                <div><a href="contact_us.html">Contact Us</a></div>
-            </nav>
-        </div>
-        <p id="date1"></p>
-    </header>
-    <main id="home-page">
+<div id="top-page-banner">
+    <div class="banner-content">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        <button class="bannerBtn" type="button">&times;</button>
+    </div>
+</div>
+<header>
+    <div class="header-content">
+        <picture>
+            <a href="index.html"><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo"></a>
+        </picture>
+        <section>
+            <a href="https://www.facebook.com/"><img class="social-media" src="image/facebooklogo.webp" width="40" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-media" src="image/instagramlogo.webp" width="40" alt="Instagram Icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-media" src="image/twitterlogo1.webp" width="40" alt="Twitter Icon"></a>
+        </section>
+    </div>
+    <nav>
+        <button id="hamburgerBtn"><span id="menu-btn">Menu</span>&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <div id="now"></div>
+    </nav>
+</header>
+<main id="home-page">
         <div class="herodiv">
             <picture class="hero-img">
-                <img src="image/wdd230-org.jpg" alt="South carolina Photo">
+                <source media="(min-width: 800px)" srcset="image/wdd230-org.webp">
+                <source media="(min-width: 390px)" srcset="image/wdd230-org.webp">
+                <img src="image/wdd230-org.webp" alt="Hero Image">
             </picture>
             <section>
                 <h2>Join the Chamber</h2>
-                <p>Come join the chamber at Lexington.</p>
-                <button class="join-button" onclick="window.location.href='';">Join</button>
+                <p>Come join the chamber.</p>
+                <button class="join-btn" onclick="window.location.href='join.html';">Join Summit</button>
             </section>
         </div>
-        <div class="news-event">
-            <h2>News Event</h2>
-            <h3>Chamber Events</h3>
+        <div class="news-events">
+            <h2>News Events</h2>
+            <p>Chamber Events</p>
             <p>From monthly breakfast meetings to major festivals,
-               the Lexington Chamber hosts events that bring together
-               business professionals and Lexington residents.
-               Thats the way we help businesses thrive in our 
-               community.</p>
+                the Lexington Chamber hosts events that bring together
+                business professionals and Lexington residents.
+                Thats the way we help businesses thrive in our 
+                community.</p>
             <p><a href="https://www.lexingtonsc.org/chamber-events">See More</a></p>
         </div>
         <div class="weather">
             <h2>Weather</h2>
-            <h3 class="city-weather">South Carolina, Lexington</h3>
-            <figure><img src="image/placeholder.jpg" alt="Weather Logo" id="weatherLogo"><figcaption></figcaption></figure>
-            <section class="weather-information">
-                <p><span id="humidity"></span></p>
-                <p><span id="temperature"></span></p>
-                <p><span id="wind-speed"></span></p>
-                <p><span id="wind-chill"></span></p>
+            <h3 class="cityWeather"></h3>
+            <figure><img src="" alt="" id="weatherLogo"><figcaption></figcaption></figure>
+            <section class="weatherInfo">
+                <p class="humidityDiv"></p>
+                <p class="temp"></p>
+                <p class="wind-speed"></p>
+                <p class="wind-chill"></p>
             </section>
-        </div>
+         </div>
         <div class="join">
-            <section>
-            <h2>New Release</h2>
-            <p>So why have nearly 750 business joined the Lexington
-                Chamber? The benefits! Through service, advocacy and
-                education, we help meet the needs of our business
-                community so Lexington can truly thrive. Thats our
-                mission, and every program, event and initiative we
-                host is focused on completing that mission. Recent
-                business that have been added to the Lexington
-                Chamber of Commerce are Advertising and Media,
-                Arts, Culture and Entertainment, Automotive and Marine,
-                Banking and Finance, Restaurants, Professional Services,
-                Community Organizations, Computers and Telecommunications,
-                Construction Contractors, Events, Health, Home Maintenance,
-                Insurance, Legal, Lodging and Travel,
-                Manufacturing, Production and Wholesale,
-                Personal Services and Care, Pets and Veterinarians,
-                Public Utilities, Industrial and Environmental,
-                Real Estate, Moving and Storage, Shopping,
-                Sports and Recreation, and Transportation.</p>
-            <button onclick="window.location.href='';">Join the Chamber</button>
-            </section>
+            <div class="gold-members"><h2>New Release</h2></div>
+            <button onclick="window.location.href='join.html';">Become a Member</button>
         </div>
-        <div class="spot1">
-            <h2>Golf Course</h2>
-            <img src="image/golflogo.jpg" alt="Golf Logo">
-            <p>
-                lexingtonsc@gmail.com
-            </p>
-            <p>
-                892-182-9432
-            </p>
+        <div class="spotlight1"></div>
+        <div class="spotlight2"></div>
+</main>
+<footer>
+    <div class="footer-content">
+        <div>
+        <picture><img src="image/chamberofcommercelogo1.webp" alt="Chamber of Commerce Logo"></picture>
         </div>
-        <div class="spot2">
-            <h2>Lunch event</h2>
-            <img src="image/lunchlogo.jpg" alt="Lunch Logo">
-            <p>
-                lexingtonsc@gmail.com
-            </p>
-            <p>
-                837-394-4920
-            </p>
+        <div>
+            <h3>Chamber of Commerce</h3>
+            <p>311 WEST MAIN STREET
+                LEXINGTON, SC 29072</p>
         </div>
-        <div class="spot3">
-            <h2>Lexington Gym</h2>
-            <img src="image/gymlogo.jpg" alt="Gym Logo">
-            <p>
-                lexingtonsc@gmail.com
-            </p>
-            <p>
-                825-384-8203
-            </p>
+        <div>
+            <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
         </div>
-        <div class="spot4">
-            <h2>Contact Us</h2>
-            <img src="image/chamberofcommercelogo1.jpg" alt="Chamber of Commerce Logo">
-            <p>
-                lexingtonsc@gmail.com
-            </p>
-            <p>
-                829-483-9281
-            </p>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div>
-                <picture><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo Photo"></picture>
-            </div>
-            <div class="footer-1">
-                <h3>Chamber of Commerce</h3>
-                <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
-            </div>
-            <div class="footer-2">
-                <p>311 WEST MAIN STREET
-                    LEXINGTON, SC 29072</p>
-            </div>
-        </div>
-        <div class="base-footer">
-            <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span class="date"></span></h5>
-        </div>
-    </footer>
+    </div>
+    <div class="base-footer">
+        <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span id="currentDateandTime"></span></h5>
+    </div>
+</footer>
 <script src="javascript/index.js"></script>
 <script src="javascript/windchill.js"></script>
+<script src="javascript/spotlight.js"></script>
 </body>
 </html>
