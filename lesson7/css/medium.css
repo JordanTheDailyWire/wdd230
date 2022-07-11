@@ -1,37 +1,47 @@
+/* For small viewports */
 @media only screen and (min-width: 640px) {
-   
-    .weather-information {
+
+    .weatherInfo {
         right: 10%;
     }
+
     .weather figure {
         left: 20%;
     }
+
+    .weather h2 {
+        background-color: #004777;
+        color: white;
+    }
 }
 
+/* For Medium Viewports */
 @media only screen and (min-width: 760px) {
 
-    /*Footer*/
+    /* Footer */
     .footer-content {
         display: flex;
     }
+
     .footer-content div {
         margin: 2rem;
         flex: 1 1 auto;
     }
+
     .footer-content img {
         max-width: 75%;
     }
-    
-    /*Main*/
+
+    /* Main */
     .herodiv section h2 {
         font-size: 3rem;
     }
 
-    .spotdiv {
+    .spotlightdiv {
         display: flex;
     }
 
-    .spot {
+    .spotlight {
         align-self: center;
         flex: 1 1 auto;
     }
@@ -46,12 +56,12 @@
         padding: 1.5rem;
     }
 
-    /*Weather*/
+    /* Weather */
     .weather {
         height: 20vh;
     }
 
-    .weather-information {
+    .weatherInfo {
         right: 30%;
     }
 
@@ -59,7 +69,7 @@
         left: 30%;
     }
 
-    /*Discovery Page*/
+    /* Discover Page */
     .media-card {
         width: 75%;
         transition: ease-in-out 0.3s;;
@@ -71,17 +81,23 @@
         transform: scale(1.02);
     }
 
-    /*Join*/
+    /* Join Page */
     form input.submitBtn {
         margin-left: 2%;
     }
 
-    /*Directory Page*/
+    /* Thank You Page */
+    #thankyou {
+        height: 50vh;
+        padding-top: 5%;
+    }
+
+    /* Directory Page */
     .grid-view {
         grid-template-columns: 1fr 1fr;
     }
-
-    /*Contact*/
+    
+    /* Contact Us Page */
     #contact div {
         width: 50%;
         padding: 1.5rem 0;

@@ -2,36 +2,42 @@
     "Events": [
         {
             "name":"Golf Course",
+            "img":"",
             "email":"",
             "phone":""
         },
         
         {
             "name":"Lunch Event",
+            "img":"",
             "email":"",
             "phone":""
         },
 
         {
             "name":"Gym",
+            "img":"",
             "email":"",
             "phone":""
         },
 
         {
             "name":"Chamber Party",
+            "img":"",
             "email":"",
             "phone":""
         },
 
         {
             "name":"Business Event",
+            "img":"",
             "email":"",
             "phone":""
         },
 
         {
             "name":"Contact Us",
+            "img":"",
             "email":"",
             "phone":""
         }

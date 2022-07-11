@@ -1,5 +1,3 @@
-
-
 spotlightURL = "http://github.com/JordanTheDailyWire/wdd230/tree/main/lesson4/chamber/json/spotlight.json";
 spotlight1Div = document.querySelector(".spotlight1");
 spotlight2Div = document.querySelector(".spotlight2");
@@ -16,8 +14,8 @@ fetch(spotlightURL)
     get_content(`Spring Harvest Parade`, 'images/spring-harvest-parade.webp', 'spring-harvest-parade', spotlight2Div);
     get_content(`Art In The Park Registration Open`, 'images/art-in-the-park.webp', 'art-in-the-park', spotlight2Div);
     
-    const businesses = jsonObject['Events'];
-    businesses.forEach(displayGoldMembers);
+    const Events = jsonObject['Events'];
+    Events.forEach(displayGoldMembers);
 
     function get_content(title, URL, alt, div) {
 
