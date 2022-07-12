@@ -1,16 +1,31 @@
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+let imagesToLoad = document.querySelectorAll('img[data-src]');
 
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// long, medium, short options ... try them
+const imageOptions = {
+    threshold: 1,
+    rootMargin: '0px 0px 50px 0px'
+};
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+const loadImages = (img) => {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = () => {
+        img.removeAttribute('data-src');
+    };
+};
+
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer)  => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}

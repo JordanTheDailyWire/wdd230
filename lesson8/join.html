@@ -12,30 +12,28 @@
     <title>Join Page</title>
 </head>
 <body>
-    <div id="top-page-banner">
-        <div class="banner-content">
-            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-            <button class="bannerBtn" type="button">&times;</button>
-        </div>
-    </div>
     <header>
         <div class="header-content">
-            <img src="image/chamberofcommercelogo1.webp" alt="Chamber Of Commerce Logo">
-            <div class="header-content-1">
-                <a href="https://www.bing.com/ck/a?!&&p=ff879ec56c531de9a1efc81f88132b65c0382d4360dfb374bb2092ba5e3cd790JmltdHM9MTY1MzcyMDc4MSZpZ3VpZD0xNWFmZDVlMi0yNGIzLTQxZGMtYjAyZi1iYWRmYjgxOGUxMjQmaW5zaWQ9NTE2NA&ptn=3&fclid=d067e92f-de52-11ec-b950-3ee78080dd88&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"></a><img src="image/facebooklogo.jpg" width="40" alt="Facebook Icon">
-                <a href="https://www.bing.com/ck/a?!&&p=5c75a579b70ab37e83bae67ca145cb48b18af27d9fb6ccafab7b097a08bcf87aJmltdHM9MTY1MzcyMDc4NyZpZ3VpZD1hZTZjMTY3MC0xNTJiLTQ5MjktYjY0Zi0yMWJmYzY4OTA0NmQmaW5zaWQ9NTE3MQ&ptn=3&fclid=d45d5f71-de52-11ec-8e31-d4b3b910df86&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"></a><img src="image/instagramlogo.jpg" width="40" alt="Instagram Icon">
-                <a href="https://www.bing.com/th?id=OIP.T9W8FR0DLy4WuS8DKub7AgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"></a><img src="image/twitterlogo1.jpg" width="40" alt="Twitter Icon">
-            </div>
+            <picture>
+                <a href="index.html"><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo"></a>
+            </picture>
+            <section>
+                <a href="https://www.facebook.com/"><img class="social-media" src="image/facebooklogo.webp" width="40" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/"><img class="social-media" src="image/instagramlogo.webp" width="40" alt="Instagram Icon"></a>
+                <a href="https://www.twitter.com/"><img class="social-media" src="image/twitterlogo1.webp" width="40" alt="Twitter Icon"></a>
+            </section>
         </div>
-        <div id="content">
         <nav>
-            <div><a href="index.html">Home</a></div>
-            <div><a href="discover.html">Discover</a></div>
-            <div><a href="directory.html">Directory</a></div>
-            <div><a href="join.html">Join</a></div>
-            <div><a href="contact_us.html">Contact Us</a></div>
+            <button id="hamburgerBtn"><span id="menu-btn">Menu</span>&#9776;</button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <div id="now"></div>
         </nav>
-        </div>
     </header>
     <main id="join-form">
         <h2>Chamber of Commerce Application Form</h2>
@@ -78,21 +76,21 @@
    <footer>
     <div class="footer-content">
         <div>
-            <picture><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo Photo"></picture>
+        <picture><img src="image/chamberofcommercelogo1.webp" alt="Chamber of Commerce Logo"></picture>
         </div>
-        <div class="footer-1">
+        <div>
             <h3>Chamber of Commerce</h3>
-            <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
-        </div>
-        <div class="footer-2">
             <p>311 WEST MAIN STREET
                 LEXINGTON, SC 29072</p>
         </div>
+        <div>
+            <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
+        </div>
     </div>
     <div class="base-footer">
-        <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span class="date"></span></h5>
+        <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span id="currentDateandTime"></span></h5>
     </div>
-    </footer>
+</footer>
 <script src="javascript/join.js"></script>
 </body>
 </html>

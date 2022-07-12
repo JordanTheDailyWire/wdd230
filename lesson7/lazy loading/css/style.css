@@ -1,4 +1,3 @@
-
 * {
     text-align: center;
     margin: 0;
@@ -30,12 +29,8 @@ picture {
     display: block;
 }
 
-picture img[src] {
+picture img[data-src] {
     filter: blur(0.2em);
-}
-
-picture img:hover {
-    filter: blur(0);
 }
 
 picture img {

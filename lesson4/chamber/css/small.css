@@ -143,7 +143,6 @@ div.herodiv section {
 
 .gold-members {
     height: 40vh;
-    overflow: scroll;
 }
 
 .gold-members h2 {
@@ -252,7 +251,7 @@ main div.weather h2 {
 }
 
 #weatherLogo {
-    width: 100%;
+    width: 50%;
 }
 
 /* Footer */
@@ -285,7 +284,8 @@ main div.weather h2 {
 #top-page-banner {
     text-align: center;
     padding: 10px;
-    background-color: #FCA311;
+    background-color: #004777;
+    color: white;
 }
 
 .bannerBtn {

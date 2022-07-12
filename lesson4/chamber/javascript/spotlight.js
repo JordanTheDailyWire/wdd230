@@ -17,7 +17,7 @@ fetch(spotlightURL)
     const Events = jsonObject['Events'];
     Events.forEach(displayGoldMembers);
 
-    function get_content(title, URL, alt, div) {
+    function get_content(name, URL, alt, div) {
 
         key = jsonObject.Events;
         random = key[Math.floor(Math.random() * (key.length))];
