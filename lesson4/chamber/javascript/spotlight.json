@@ -2,14 +2,14 @@
     "Events": [
         {
             "name":"Golf Course",
-            "img":"",
-            "email":"",
-            "phone":""
+            "img":"image/golflogo.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"835-483-2942"
         },
         
         {
             "name":"Lunch Event",
-            "img":"",
+            "img":"image/lunchevent.webp",
             "email":"",
             "phone":""
         },

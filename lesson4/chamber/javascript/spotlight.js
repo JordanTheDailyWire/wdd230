@@ -1,25 +1,26 @@
-spotlightURL = "http://github.com/JordanTheDailyWire/wdd230/tree/main/lesson4/chamber/json/spotlight.json";
-spotlight1Div = document.querySelector(".spotlight1");
-spotlight2Div = document.querySelector(".spotlight2");
+dataURL = 'https://github.com/JordanTheDailyWire/wdd230/blob/main/lesson4/chamber/json/spotlight.json';
+spotlight1Div = document.querySelector('.spotlight1');
+spotlight2Div = document.querySelector('.spotlight2');
+goldMembers = document.querySelector('.gold-members');
 
-fetch(spotlightURL)
+fetch(dataURL)
 .then((response) => response.json())
 .then((jsonObject) => {
     console.log(jsonObject);
 
-    get_content(`Golf Course`, 'image/golfcourse.webp', 'Golf Course', spotlight1Div);
+    get_content(`Golf Course`, 'image/golflogo.webp', 'lexingtonsc@gmail.com', '829-382-9472', spotlight1Div);
     get_content(`On-Demand Bus Until Spring`, 'images/on-demand-bus.webp', 'on-demand-bus', spotlight1Div);
     get_content(`Tree Planting Initiatives`, 'images/tree-planting.webp', 'tree-planting-initiatives', spotlight1Div);
     get_content(`Toys for Tots Gift-giving`, 'images/toys-for-tots.webp', 'toys-for-tots', spotlight2Div);
     get_content(`Spring Harvest Parade`, 'images/spring-harvest-parade.webp', 'spring-harvest-parade', spotlight2Div);
     get_content(`Art In The Park Registration Open`, 'images/art-in-the-park.webp', 'art-in-the-park', spotlight2Div);
     
-    const Events = jsonObject['Events'];
-    Events.forEach(displayGoldMembers);
+    const businesses = jsonObject['businesses'];
+    businesses.forEach(displayGoldMembers);
 
-    function get_content(name, URL, alt, div) {
+    function get_content(title, URL, alt, div) {
 
-        key = jsonObject.Events;
+        key = jsonObject.businesses;
         random = key[Math.floor(Math.random() * (key.length))];
 
         let container = document.createElement('section');
@@ -45,5 +46,20 @@ fetch(spotlightURL)
         container.appendChild(phone);
 
         div.appendChild(container);
+    }
+
+    function displayGoldMembers(info) {
+
+        let container = document.createElement('section');
+        let link = document.createElement('a');
+        let company_name = document.createElement('p');
+
+        link.textContent = info.name;
+        link.setAttribute('href', info.website);
+
+        company_name.appendChild(link);
+        container.appendChild(company_name);
+
+        goldMembers.appendChild(container);
     }
 });
