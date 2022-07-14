@@ -1,0 +1,45 @@
+{
+    "businesses": [
+        {
+            "name":"Golf Course",
+            "img":"image/golflogo.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"835-483-2942"
+        },
+        
+        {
+            "name":"Lunch Event",
+            "img":"image/lunchlogo.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"893-252-7640"
+        },
+
+        {
+            "name":"Gym",
+            "img":"image/gymlogo.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"865-726-4975"
+        },
+
+        {
+            "name":"Chamber Party",
+            "img":"image/grace.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"825-524-9274"
+        },
+
+        {
+            "name":"Business Event",
+            "img":"image/directoryimage1.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"830-215-4832"
+        },
+
+        {
+            "name":"Contact Us",
+            "img":"image/chamberofcommercelogo1.webp",
+            "email":"lexingtonsc@gmail.com",
+            "phone":"852-476-4591"
+        }
+    ]
+}

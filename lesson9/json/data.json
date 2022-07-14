@@ -1,18 +1,48 @@
 {
-    "business": [
+    "businesses": [
         {
             "name":"BEVERAGE SOUTH OF COLUMBIA",
-            "phone number":"(803) 799-1558",
+            "phone":"(803) 799-1558",
             "business representative":"Mr. Brad Genners",
             "email":"brad.genners@bevsouth.us",
-            "img":"image/directoryimage1.jpg"
+            "img":"image/directoryimage1.jpg",
+            "membership":"Gold"
         },
 
         {
-            "membership": "Gold",
-            "employees":"",
-            "type of business":"",
-            "joined":""
+            "name":"",
+            "phone":"",
+            "business representative":"",
+            "email":"",
+            "img":"",
+            "membership":""
+        },
+
+        {
+            "name":"",
+            "phone":"",
+            "business representative":"",
+            "email":"",
+            "img":"",
+            "membership":""
+        },
+
+        {
+            "name":"",
+            "phone":"",
+            "business representative":"",
+            "email":"",
+            "img":"",
+            "membership":""
+        },
+
+        {
+            "name":"",
+            "phone":"",
+            "business representative":"",
+            "email":"",
+            "img":"",
+            "membership":""
         }
     ]
 }
