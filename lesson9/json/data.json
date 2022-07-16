@@ -5,44 +5,44 @@
             "phone":"(803) 799-1558",
             "business representative":"Mr. Brad Genners",
             "email":"brad.genners@bevsouth.us",
-            "img":"image/directoryimage1.jpg",
+            "img":"image/directoryimage1.webp",
             "membership":"Gold"
         },
 
         {
-            "name":"",
-            "phone":"",
-            "business representative":"",
-            "email":"",
-            "img":"",
-            "membership":""
+            "name":"Apex Investment Advisors",
+            "phone":"803-454-0900",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"image/directoryimage2.webp",
+            "membership":"Gold"
         },
 
         {
-            "name":"",
-            "phone":"",
-            "business representative":"",
-            "email":"",
-            "img":"",
-            "membership":""
+            "name":"Barnes Jewelers",
+            "phone":"803-951-2020",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"image/directoryimage3.webp",
+            "membership":"Silver"
         },
 
         {
-            "name":"",
-            "phone":"",
-            "business representative":"",
-            "email":"",
-            "img":"",
-            "membership":""
+            "name":"Bellacino's Pizza & Grinders",
+            "phone":"803-957-6767",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"image/directoryimage4.webp",
+            "membership":"Bronze"
         },
 
         {
-            "name":"",
-            "phone":"",
-            "business representative":"",
-            "email":"",
-            "img":"",
-            "membership":""
+            "name":"Blazon Apparel + Print",
+            "phone":"803-796-9100",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"image/directoryimage5.webp",
+            "membership":"Non Profit"
         }
     ]
 }

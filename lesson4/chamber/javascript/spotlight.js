@@ -1,4 +1,4 @@
-dataURL = 'https://github.com/JordanTheDailyWire/wdd230/blob/main/lesson4/chamber/json/spotlight.json';
+dataURL = "https://github.com/JordanTheDailyWire/wdd230/blob/main/lesson4/chamber/json/spotlight.json";
 spotlight1Div = document.querySelector('.spotlight1');
 spotlight2Div = document.querySelector('.spotlight2');
 goldMembers = document.querySelector('.gold-members');

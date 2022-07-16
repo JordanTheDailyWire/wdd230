@@ -1,20 +1,27 @@
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-const datefield1 = document.querySelector(".date-1");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+// script for hamburger menu
+function toggleMenu() {
 
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-// long, medium, short options ... try them
+    document.getElementById('primaryNav').classList.toggle('open');
+}
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
-datefield1.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+let x = document.getElementById('hamburgerBtn')
+x.onclick = toggleMenu
 
+
+// script for time and date
+const datefield = document.querySelector("#now");
+const datefield2 = document.querySelector("#currentDateandTime");
+
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format();
+
+datefield.innerHTML = `<em>${fulldate}<em>`;
+datefield2.innerHTML = `<em>${fulldate}<em>`;
+
+
+// script for footer year and date modified
 document.querySelector('#year').innerHTML = new Date().getFullYear();
-document.querySelector('#currentdate').innerHTML = document.lastModified;
 
+// JavaScript for banner
 const banner = document.querySelector('#top-page-banner');
 
 let dayOfWeek = new Date().getDay();
@@ -25,3 +32,11 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
 else {
     banner.style.display = 'none';
 }
+
+// Script for closing the banner
+const closeBtn = document.querySelector('.bannerBtn');
+closeBtn.addEventListener('click', function() {
+    if (banner.style.display !== "none") {
+        banner.style.display = "none";
+    }
+})
