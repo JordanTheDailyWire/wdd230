@@ -42,6 +42,42 @@
             "business representative":"N/A",
             "email":"lexingtonsc@gmail.com",
             "img":"image/directoryimage5.webp",
+            "membership":"Gold"
+        },
+
+        {
+            "name":"Grace Outdoor Advertising",
+            "phone":"803-719-5188",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"image/directoryimage6.webp",
+            "membership":"Silver"
+        },
+
+        {
+            "name":"Chevrolet",
+            "phone":"(803) 799-1558",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"",
+            "membership":"Bronze"
+        },
+
+        {
+            "name":"United Way",
+            "phone":"(803) 799-1558",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"",
+            "membership":"Non Profit"
+        },
+
+        {
+            "name":"Harvest Hope Food Bank",
+            "phone":"(803) 799-1558",
+            "business representative":"N/A",
+            "email":"lexingtonsc@gmail.com",
+            "img":"",
             "membership":"Non Profit"
         }
     ]
