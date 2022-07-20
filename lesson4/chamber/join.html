@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>Join Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="image/chamberofcommercelogo1.jpg" alt="Chamber Of Commerce Logo"></a>
+            <section>
+                <a href="https://www.facebook.com/"><img class="social-media" src="image/facebooklogo.webp" width="40" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/"><img class="social-media" src="image/instagramlogo.webp" width="40" alt="Instagram Icon"></a>
+                <a href="https://www.twitter.com/"><img class="social-media" src="image/twitterlogo1.webp" width="40" alt="Twitter Icon"></a>
+            </section>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span id="menu-btn">Menu</span>&#9776;</button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <div id="now"></div>
+        </nav>
+    </header>
+    <main id="join-form">
+        <h2>Chamber of Commerce Application Form</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Choose Membership</legend>
+                <label class="sbs"><input type="radio" name="membership" value="nonprofit"> None-Profit | Free</label>
+                <p>Unique to non-profits, expand your organizations reach by joining the Lexington Chamber 
+                    of Commerce to gain access to many of the valley's other top community focused businesses.</p>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze | $200</label>
+                <p>Bronze membership includes receive one Chamber window decal,		
+                    opportunity to attend networking events,
+                    customizable online business listing,		
+                    use the Chamber Shareholder logo in advertising,		
+                    recognition in weekly e-newsletter and monthly breakfast brief,
+                    receive discounts through Shareholder Savings and Chamber Affiliate Programs.</p>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver | $400</label>
+                <p>Silver membership includes bronze benefits plus Business listing in two categories in Chamber online directory,	
+                    One complimentary ribbon cutting ceremony at the Chamber or business location, and		
+                    Recognition in the Chamber's Preferred Caterer List.</p>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold | $600</label>
+                <p>Gold membership includes silver benefits plus Business listing in three categories in Chamber online directory,	
+                    One high-resolution headshot from JH Photography, and			
+                    Business logo displays in online directory search results.</p>
+            </fieldset>
+            <fieldset>
+                <legend>Enter Contact Information</legend>
+                <p><i>Fields with red border are required.</i></p>
+                <label class="top">First Name: <input type="text" name="fname" required></label>
+                <label class="top">Last Name: <input type="text" name="lname" required></label>
+                <label class="top">Business Position: <input type="text" name="position" pattern="[a-zA-Z0-9- ]{1,7}" id="businessPosition"></label>
+                <label class="top">E-mail: <input type="email" name="email" placeholder="E-mail" required></label>
+                <label class="top">Cellphone no.: <input type="tel" name="phone" required></label>
+                <label class="top">Business  Name: <input type="text" name="businessName" required></label>
+                <label class="top">Business  Description: <textarea placeholder="Type here" name="description"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Join The Chamber" class="submitBtn">
+        </form>
+   </main>
+   <footer>
+    <div class="footer-content">
+        <div>
+        <picture><img src="image/chamberofcommercelogo1.webp" alt="Chamber of Commerce Logo"></picture>
+        </div>
+        <div>
+            <h3>Chamber of Commerce</h3>
+            <p>311 WEST MAIN STREET
+                LEXINGTON, SC 29072</p>
+        </div>
+        <div>
+            <p>Karen@Lexingtonsc.org or (803) 359-6113</p>
+        </div>
+    </div>
+    <div class="base-footer">
+        <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span id="currentDateandTime"></span></h5>
+    </div>
+</footer>
+<script src="javascript/join.js"></script>
+</body>
+</html>
