@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html"><img src="image/templeinnlogo2.webp" width="100" alt="Temple Inn Logo"></a>
+            <h1>Temple Inn & Suites</h1>
+            <section>
+                <a href="https://www.facebook.com/"><img class="social-media" src="image/facebooklogo.webp" width="40" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/"><img class="social-media" src="image/instagramlogo.webp" width="40" alt="Instagram Icon"></a>
+                <a href="https://www.twitter.com/"><img class="social-media" src="image/twitterlogo1.webp" width="40" alt="Twitter Icon"></a>
+            </section>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span id="menu-btn">Menu</span>&#9776;</button>
+            <ul id="primaryNav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <div id="now"></div>
+        </nav>
+    </header>
+    <main id="homepage">
+        <div class="herodiv">
+            <picture class="hero-img">
+                <source media="(min-width: 800px)" srcset="image/taylorsvilletempleimage.webp">
+                <source media="(min-width: 390px)" srcset="image/taylorsvilletempleimage.webp">
+                <img src="image/taylorsvilletempleimage.webp" alt="Temple Image">
+            </picture>
+        </div>
+        <div class="information">
+            <h2>Taylorsville Temple</h2>
+            <p>
+                The Taylorsville Temple was announced on October 31st,
+                2019. Started development in 2020, and has come along
+                way. As we get closer to the opening, everybody is
+                making reservation to this beautiful temple. Take
+                the opportunity to reserve your spot now.
+            </p>
+            <button class="join-btn" onclick="window.location.href='reservation.html';">Reserve Now</button>
+        </div>
+    </main>
+<footer>
+    <div class="footer-content">
+        <div>
+            <picture><img src="image/templeinnlogo2.webp" width="100" alt="Temple Inn Logo"></picture>
+        <div>
+            <h3>Temple Inn & Services</h3>
+            <p>1600 N Freedom Blvd, Provo, UT 84604-2517</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.897461493349!2d-111.66307868502004!3d40.255810073335205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d909f6918e559%3A0x9f2ca541d0b18aef!2sSpringHill%20Suites%20by%20Marriott%20Provo!5e0!3m2!1sen!2sus!4v1658416881582!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <p>templeinn@gmail.com or (801)-392-8557</p>
+        </div>
+    </div>
+    <div class="base-footer">
+        <h5>&copy; <span id="year"></span> | Jordan Capener II | Utah | <span id="currentDateandTime"></span></h5>
+    </div>
+</footer>
+<script src="javascript/home.js"></script>
+</body>
+</html>
