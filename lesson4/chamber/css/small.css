@@ -1,4 +1,20 @@
 /* CSS for smaller devices */
+@media only screen and (min-width: 640px) {
+
+    .weatherInfo {
+        right: 10%;
+    }
+
+    .weather figure {
+        left: 20%;
+    }
+
+    .weather h2 {
+        background-color: #004777;
+        color: white;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -455,6 +455,10 @@ form label.top input:required:valid {
     text-align: center;
 }
 
+.button-img {
+    max-width: 30px;
+}
+
 /* Directory Page Buttons */
 .links ul {
     display: flex;

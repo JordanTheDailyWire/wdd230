@@ -181,6 +181,10 @@
         width: 15%;
     }
 
+    .button-img {
+        max-width: 30px;
+    }
+
     /* Contact Us Page */
     #contact div.form-container {
         width: 50%;
