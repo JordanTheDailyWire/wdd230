@@ -40,10 +40,6 @@ header{
     font-size: 2rem;
 }
 
-a:hover{
-    color: green;
-}
-
 .img{
     max-width: 30%;
     margin: 0 auto;

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+p, li, div {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#home-page p {
+    font-weight: bold;
+}
+
+/* Navigation */
+#hamburgerBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+.header-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.media {
+    margin-top: 50px;
+}
+
+/* Main */
+#square-1 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-2 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-3 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-4 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-5 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-6 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#square-7 {
+    display: grid;
+    grid-row: 2;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
