@@ -21,11 +21,19 @@ p, li, div {
     flex-direction: row;
 }
 
+#primaryNav {
+    display: none;
+}
+
+#primaryNav.open {
+    display: block;
+}
+
 /* Header */
 .header-content {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .media {
@@ -36,76 +44,83 @@ p, li, div {
 #square-1 {
     display: grid;
     grid-row: 2;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #square-2 {
     display: grid;
     grid-row: 2;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #square-3 {
     display: grid;
     grid-row: 2;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #square-4 {
     display: grid;
     grid-row: 2;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #square-5 {
     display: grid;
     grid-row: 2;
-    height: 200px;
-    width: 400px;
+    height: 360px;
+    width: 380px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #square-6 {
-    display: grid;
-    grid-row: 2;
-    height: 200px;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 340px;
+    margin-top: 15px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    padding: 10px;
 }
 
 #square-7 {
-    display: grid;
-    grid-row: 2;
-    height: 200px;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 340px;
+    margin-top: -10px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
-    margin-bottom: 2px;
+    padding: 10px;
 }
