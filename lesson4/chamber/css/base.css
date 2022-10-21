@@ -16,9 +16,9 @@ p, li, div {
 }
 
 /* Navigation */
-#hamburgerBtn {
-    display: flex;
-    flex-direction: row;
+nav {
+    margin-top: 25px;
+    margin-left: 28px;
 }
 
 #primaryNav {
@@ -29,15 +29,33 @@ p, li, div {
     display: block;
 }
 
+#hamburgerBtn {
+    background-color: #004777;
+    color: white;
+}
+
+#now {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    background-color: #004777;
+    color: white;
+    padding: 10px;
+}
+
 /* Header */
 .header-content {
     display: flex;
-    flex-direction: row;
-    max-width: 50%;
+}
+
+header {
+    display: flex;
 }
 
 .media {
-    margin-top: 50px;
+    display: flex;
+    margin-top: 32px;
 }
 
 /* Main */
@@ -45,7 +63,7 @@ p, li, div {
     display: grid;
     grid-row: 2;
     height: 180px;
-    width: 380px;
+    width: auto;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
@@ -57,7 +75,7 @@ p, li, div {
     display: grid;
     grid-row: 2;
     height: 180px;
-    width: 380px;
+    width: auto;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
@@ -69,7 +87,7 @@ p, li, div {
     display: grid;
     grid-row: 2;
     height: 180px;
-    width: 380px;
+    width: auto;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
@@ -81,7 +99,7 @@ p, li, div {
     display: grid;
     grid-row: 2;
     height: 180px;
-    width: 380px;
+    width: auto;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
@@ -93,7 +111,7 @@ p, li, div {
     display: grid;
     grid-row: 2;
     height: 360px;
-    width: 380px;
+    width: auto;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
@@ -105,7 +123,7 @@ p, li, div {
     display: flex;
     flex-direction: column;
     height: 140px;
-    width: 340px;
+    width: auto;
     margin-top: 15px;
     border: 2px solid gray;
     color: gray;
@@ -117,10 +135,15 @@ p, li, div {
     display: flex;
     flex-direction: column;
     height: 140px;
-    width: 340px;
+    width: auto;
     margin-top: -10px;
     border: 2px solid gray;
     color: gray;
     background-color: lightgray;
     padding: 10px;
+}
+
+footer {
+    background-color: #004777;
+    color: white;
 }
