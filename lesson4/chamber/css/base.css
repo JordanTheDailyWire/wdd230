@@ -23,6 +23,44 @@ nav {
 
 #primaryNav {
     display: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: lightgray;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#primaryNav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#primaryNav a.active {
+    background-color: #004777;
+    color: white;
+}
+
+#primaryNav a:hover:not(.active) {
+    background-color: gray;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #primaryNav {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #primaryNav a {
+        text-align: center;
+        float: none;
+    }
 }
 
 #primaryNav.open {
@@ -32,6 +70,7 @@ nav {
 #hamburgerBtn {
     background-color: #004777;
     color: white;
+    font-size: xx-large;
 }
 
 #now {
@@ -60,8 +99,6 @@ header {
 
 /* Main */
 #square-1 {
-    display: grid;
-    grid-row: 2;
     height: 180px;
     width: auto;
     border: 2px solid gray;
@@ -72,8 +109,6 @@ header {
 }
 
 #square-2 {
-    display: grid;
-    grid-row: 2;
     height: 180px;
     width: auto;
     border: 2px solid gray;
@@ -84,8 +119,6 @@ header {
 }
 
 #square-3 {
-    display: grid;
-    grid-row: 2;
     height: 180px;
     width: auto;
     border: 2px solid gray;
@@ -96,8 +129,6 @@ header {
 }
 
 #square-4 {
-    display: grid;
-    grid-row: 2;
     height: 180px;
     width: auto;
     border: 2px solid gray;
@@ -107,10 +138,9 @@ header {
     padding: 10px;
 }
 
-#square-5 {
-    display: grid;
-    grid-row: 2;
-    height: 360px;
+#spotlight-5 {
+    display: none;
+    height: 180px;
     width: auto;
     border: 2px solid gray;
     color: gray;
@@ -120,6 +150,16 @@ header {
 }
 
 #square-6 {
+    height: 360px;
+    width: auto;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+#square-7 {
     display: flex;
     flex-direction: column;
     height: 140px;
@@ -131,8 +171,20 @@ header {
     padding: 10px;
 }
 
-#square-7 {
+#square-8 {
     display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: auto;
+    margin-top: -10px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#square-9 {
+    display: none;
     flex-direction: column;
     height: 140px;
     width: auto;
@@ -146,4 +198,5 @@ header {
 footer {
     background-color: #004777;
     color: white;
+    text-align: center;
 }
