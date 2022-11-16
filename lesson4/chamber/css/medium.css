@@ -1,16 +1,6 @@
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1600px) and (min-width:834px) {
     * {
         margin: 0;
         padding: 0;
-    }
-
-    /* Navigation */
-    nav {
-        margin-left: auto;
-    }
-
-    /* Main */
-    #spotlight-5 {
-        display: contents;
     }
 }
