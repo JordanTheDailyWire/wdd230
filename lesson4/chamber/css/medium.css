@@ -1,6 +1,219 @@
-@media only screen and (max-width: 1600px) and (min-width:834px) {
+@media only screen and (max-width: 1024px) and (min-width: 490px) {
     * {
         margin: 0;
         padding: 0;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+    
+    p, li, div {
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    #home-page p {
+        font-weight: bold;
+    }
+    
+    /* Navigation */
+    #primaryNav {
+        display: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background: #004777;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    #primaryNav a {
+        display: block;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+    }
+    
+    #primaryNav a.active {
+        background-color: #004777;
+        color: white;
+    }
+    
+    #primaryNav a:hover:not(.active) {
+        background-color: gray;
+        color: white;
+    }
+    
+    @media screen and (max-width: 800px) {
+        #primaryNav {
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        #primaryNav a {
+            text-align: center;
+            float: none;
+        }
+    }
+    
+    #primaryNav.open {
+        display: block;
+    }
+    
+    #hamburgerBtn {
+        background-color: #004777;
+        color: white;
+        font-size: 60px;
+        margin-top: 40px;
+        margin-left: 180px;
+    }
+    
+    #now {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+        background-color: #004777;
+        color: white;
+        padding: 10px;
+    }
+    
+    /* Header */
+    .header-content {
+        display: flex;
+    }
+    
+    header {
+        display: flex;
+        background-color: #004777;
+    }
+    
+    .media {
+        display: flex;
+        margin-top: 60px;
+    }
+    
+    /* Main */
+    #home-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #square-1 {
+        height: 180px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    
+    #square-2 {
+        height: 180px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+        order: 2;
+        margin-right: 42%;
+    }
+    
+    #square-3 {
+        height: 180px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+        order: 3;
+        position: relative;
+        margin-top: -208.5px;
+        margin-left: 59.1%;
+    }
+    
+    #square-4 {
+        height: 180px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    
+    #spotlight-5 {
+        height: 180px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+        order: 1;
+    }
+    
+    #square-6 {
+        height: 200px;
+        width: auto;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    
+    #square-7 {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: auto;
+        margin-top: 15px;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        padding: 10px;
+        margin-right: 52%;
+    }
+    
+    #square-8 {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: auto;
+        margin-top: -10px;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        padding: 10px;
+        position: relative;
+        top: -77%;
+        margin-left: 52%;
+    }
+    
+    #square-9 {
+        display: none;
+        flex-direction: column;
+        height: 140px;
+        width: auto;
+        margin-top: -10px;
+        border: 2px solid gray;
+        color: gray;
+        background-color: lightgray;
+        padding: 10px;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #004777;
+        color: white;
+        text-align: center;
     }
 }
